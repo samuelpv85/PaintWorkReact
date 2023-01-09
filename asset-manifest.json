@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/samuelpv85/PaintWorkReact/static/css/main.073c9b0a.css",
+    "main.js": "/samuelpv85/PaintWorkReact/static/js/main.c1cbf183.js",
+    "static/js/787.a325d9af.chunk.js": "/samuelpv85/PaintWorkReact/static/js/787.a325d9af.chunk.js",
+    "static/media/logo.svg": "/samuelpv85/PaintWorkReact/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/samuelpv85/PaintWorkReact/index.html",
+    "main.073c9b0a.css.map": "/samuelpv85/PaintWorkReact/static/css/main.073c9b0a.css.map",
+    "main.c1cbf183.js.map": "/samuelpv85/PaintWorkReact/static/js/main.c1cbf183.js.map",
+    "787.a325d9af.chunk.js.map": "/samuelpv85/PaintWorkReact/static/js/787.a325d9af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c1cbf183.js"
+  ]
+}
