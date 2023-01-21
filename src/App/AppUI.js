@@ -35,6 +35,7 @@ function AppUI({
         {/* // Mostramos un mensaje de cargando, cuando la aplicación está cargando lo sdatos */}
         {loading && <p>Estamos cargando, no desesperes...</p>}
         {/* // Si terminó de cargar y no existen TODOs, se muestra un mensaje para crear el primer TODO */}
+        {(!loading && !searchedTodos.length) && <p>¡Crea tu primer TODO</p>v}
 
       {searchedTodos.map(todo => ( // Interactua sobre la lista Falsa todos
         <TodoItem 
