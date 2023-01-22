@@ -13,7 +13,7 @@ import { TodoProvider } from "../TodoContext/";
 // const defaultTodos = [
 //   { text : 'Cortar cebolla', completed: true },
 //   { text : 'Cortar Papas', completed: true },
-//   { text : 'Cortar Tomates', completed: false }
+//   { text : 'Cortar Tomates', completed: false },
 // ]
  
   function App() {

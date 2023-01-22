@@ -5,6 +5,7 @@ import { TodoList } from "../Components/TodoList/index.js";
 import { TodoItem } from "../Components/TodoItem/index.js";
 import { CreateTodoButton } from "../Components/CreateTodoButton";// Lista FALSA de todos las tareas
 import { TodoContext } from '../TodoContext/';
+import { Modal } from '../Modal';
 
 // Recibo los valores como props
 function AppUI() {
@@ -14,6 +15,8 @@ function AppUI() {
     searchedTodos,
     completeTodo,
     deleteTodo,
+    openModal,
+    setOpenModal,
   } = React.useContext(TodoContext);
   return (
     <React.Fragment>
@@ -42,8 +45,15 @@ function AppUI() {
                 />
               ))}
             </TodoList>
-
-    <CreateTodoButton />
+            
+            {!!openModal && (
+              <Modal>
+              <p>{searchedTodos[0]?.text}</p>
+              </Modal>
+            )}
+    <CreateTodoButton
+    setOpenModal = {setOpenModal}
+    />
     {/* </div> */}
   </React.Fragment>    
   );
