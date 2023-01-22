@@ -6,6 +6,7 @@ import { TodoItem } from "../Components/TodoItem/index.js";
 import { CreateTodoButton } from "../Components/CreateTodoButton";// Lista FALSA de todos las tareas
 import { TodoContext } from '../TodoContext/';
 import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 
 // Recibo los valores como props
 function AppUI() {
@@ -48,7 +49,8 @@ function AppUI() {
             
             {!!openModal && (
               <Modal>
-              <p>{searchedTodos[0]?.text}</p>
+              {/* <p>{searchedTodos[0]?.text}</p> */}
+              <TodoForm/>
               </Modal>
             )}
     <CreateTodoButton
