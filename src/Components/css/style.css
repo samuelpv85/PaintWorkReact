@@ -160,3 +160,7 @@ body {
   .CreateTodoButton:hover {
     transform: rotate(180deg);
   }
+
+  li {
+    white-space: pre-line;
+  }
