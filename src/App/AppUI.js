@@ -8,6 +8,13 @@ import { TodoContext } from '../TodoContext/';
 
 // Recibo los valores como props
 function AppUI() {
+  const {
+    error,
+    loading,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+  } = React.useContext(TodoContext);
   return (
     <React.Fragment>
     {/* <div className="container"> */}
@@ -17,14 +24,6 @@ function AppUI() {
     <TodoSearch  />
     {/* <input placeholder="Cebolla" /> */}
 
-    <TodoContext.Consumer>
-      {({
-        error,
-        loading,
-        searchedTodos,
-        completeTodo,
-        deleteTodo,
-      }) =>(
             <TodoList>
             {/* // Mostramos un mensaje en caso de que ocurra algún error */}
                 {error && <p>Desespérate, hubo un error...</p>}
@@ -43,8 +42,6 @@ function AppUI() {
                 />
               ))}
             </TodoList>
-      )}
-    </TodoContext.Consumer>
 
     <CreateTodoButton />
     {/* </div> */}
